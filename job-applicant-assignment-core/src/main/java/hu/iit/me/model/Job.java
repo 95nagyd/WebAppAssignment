@@ -35,4 +35,5 @@ public class Job {
     public String getJobCategory() {
         return jobCategory;
     }
+
 }

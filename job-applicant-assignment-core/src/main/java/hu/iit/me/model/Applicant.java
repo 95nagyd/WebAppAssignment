@@ -4,11 +4,11 @@ public class Applicant {
 
     private String applicantID;
     private String applicantName;
-    private String applicantBirthYear;
+    private int applicantBirthYear;
     private String applicantCity;
     private String applicantGender;
 
-    public Applicant(String applicantID, String applicantName, String applicantBirthYear, String applicantCity, String applicantGender) {
+    public Applicant(String applicantID, String applicantName, int applicantBirthYear, String applicantCity, String applicantGender) {
         this.applicantID = applicantID;
         this.applicantName = applicantName;
         this.applicantBirthYear = applicantBirthYear;
@@ -24,7 +24,7 @@ public class Applicant {
         return applicantName;
     }
 
-    public String getApplicantBirthYear() {
+    public int getApplicantBirthYear() {
         return applicantBirthYear;
     }
 
@@ -35,4 +35,5 @@ public class Applicant {
     public String getApplicantGender() {
         return applicantGender;
     }
+
 }
