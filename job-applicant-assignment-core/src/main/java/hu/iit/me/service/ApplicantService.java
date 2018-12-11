@@ -5,14 +5,14 @@ import java.util.Collection;
 
 public interface ApplicantService {
 
-    Collection<Applicant> listAllApplicants();
+    Collection<Applicant> getAllApplicants();
 
-    Collection<Applicant> listApplicantsByName(String name);
+    Collection<Applicant> getApplicantsByName(String name);
 
-    Collection<Applicant> listApplicantsByBirthYear(int year);
+    Collection<Applicant> getApplicantsByBirthYear(int year);
 
-    Collection<Applicant> listApplicantsByCity(String city);
+    Collection<Applicant> getApplicantsByCity(String city);
 
-    Collection<Applicant> listApplicantByGender(String gender);
+    Collection<Applicant> getApplicantByGender(String gender);
 
 }

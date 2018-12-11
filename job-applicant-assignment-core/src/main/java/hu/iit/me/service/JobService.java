@@ -5,14 +5,14 @@ import java.util.Collection;
 
 public interface JobService {
 
-    Collection<Job> listAllJobs();
+    Collection<Job> getAllJobs();
 
-    Collection<Job> listJobsByTitle(String title);
+    Collection<Job> getJobsByTitle(String title);
 
-    Collection<Job> listJobsByCity(String city);
+    Collection<Job> getJobsByCity(String city);
 
-    Collection<Job> listJobsByCompanyName(String companyName);
+    Collection<Job> getJobsByCompanyName(String companyName);
 
-    Collection<Job> listJobsByCategory(String category);
+    Collection<Job> getJobsByCategory(String category);
 
 }
