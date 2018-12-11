@@ -8,18 +8,16 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-public class WebInitializer implements WebApplicationInitializer {
-
+public class TSPWebInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(WebConfig.class);
-        context.setServletContext(servletContext);
+        AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
+        ctx.register(ApplicantServiceContext.class);
+        ctx.register(JobServiceContext.class);
+        ctx.setServletContext(servletContext);
 
-        ServletRegistration.Dynamic servletRegistration = servletContext.addServlet("dispatcherServer", new DispatcherServlet(context));
-
+        ServletRegistration.Dynamic servletRegistration = servletContext.addServlet("dispatcherServer", new DispatcherServlet(ctx));
         servletRegistration.setLoadOnStartup(0);
         servletRegistration.addMapping("/");
-        System.out.println("Server is running");
     }
 }
