@@ -12,10 +12,13 @@ public class ApplicantDAOImplementation implements ApplicantDAOInterface {
     public ApplicantDAOImplementation() {
         this.applicants = new ArrayList<>();
         applicants.add(new Applicant("1","Pásztor Dani",1990,"Miskolc","male"));
-        applicants.add(new Applicant("2","Eszter",1992,"Eger","female"));
-        applicants.add(new Applicant("3","Laci",1998,"Debrecen","male"));
-        applicants.add(new Applicant("4","Peti",1990,"Debrecen","male"));
-        applicants.add(new Applicant("5","Zsuzsa",1992,"Miskolc","female"));
+        applicants.add(new Applicant("2","Nagy Eszter",1992,"Eger","female"));
+        applicants.add(new Applicant("3","Szarka Laci",1998,"Debrecen","male"));
+        applicants.add(new Applicant("4","Szarka Peti",1990,"Debrecen","male"));
+        applicants.add(new Applicant("5","Pásztor Zsuzsa",1992,"Miskolc","female"));
+        applicants.add(new Applicant("6","Nagy József",1990,"Miskolc","male"));
+        applicants.add(new Applicant("7","Tóth Tünde",1995,"Miskolc","female"));
+        applicants.add(new Applicant("8","Fodor Béla",1992,"Eger","male"));
     }
 
     @Override
